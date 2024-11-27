@@ -93,6 +93,10 @@
 #define OPENSSL_64_BIT
 #elif defined(__riscv) && __SIZEOF_POINTER__ == 4
 #define OPENSSL_32_BIT
+#elif defined(__loongarch64)
+#define OPENSSL_64_BIT
+#elif defined(__loongarch__)
+#define OPENSSL_32_BIT
 #elif defined(__wasm__)
 #define OPENSSL_32_BIT
 #else
